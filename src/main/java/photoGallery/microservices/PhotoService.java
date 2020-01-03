@@ -1,4 +1,4 @@
-package photoGallery;
+package photoGallery.microservices;
 
 import feign.Response;
 import org.springframework.web.bind.annotation.*;

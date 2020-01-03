@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/FeignClientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/PhotoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/CommentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +90,7 @@
       <module name="photoGallery" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="photoGallery.*" />
+          <option name="PATTERN" value="photoGallery.microservices.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +103,7 @@
       <module name="PhotoGalleryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="photoGallery.*" />
+          <option name="PATTERN" value="photoGallery.microservices.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989739796" duration="11972000" />
+      <workItem from="1577989739796" duration="14092000" />
     </task>
     <servers />
   </component>

@@ -5,17 +5,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import photoGallery.PhotoService;
+import photoGallery.microservices.CommentService;
+import photoGallery.microservices.PhotoService;
 import photoGallery.model.PhotoFile.PhotoFile;
 
 @Controller
 public class HomeController {
 
     private PhotoService feignClient;
+    private CommentService commentService;
 
-    public HomeController(PhotoService feignClient) {
+    public HomeController(PhotoService feignClient, CommentService commentService) {
         this.feignClient = feignClient;
+        this.commentService = commentService;
     }
+
 
     @GetMapping("/")
     public String test(){
