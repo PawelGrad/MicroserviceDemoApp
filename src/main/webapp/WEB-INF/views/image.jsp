@@ -6,16 +6,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
-<h1>Spring Boot File Upload Example</h1>
-<hr/>
-<h4>Upload Single File:</h4>
-<form method="POST" action="/uploadFile" enctype="multipart/form-data">
-    <input type="file" name="file"/> <br/><br/>
-    <button type="submit">Submit</button>
-</form>
-<hr/>
-<div th:if="${message}">
-    <h2 th:text="${message}"/>
-</div>
+
+<img src="data:image/jpeg;base64,${photo}" />
 </body>
 </html>

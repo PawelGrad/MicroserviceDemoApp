@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PhotoGalleryApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/FeignClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/photoGallery.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,13 +32,24 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -53,10 +66,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pawcik\IdeaProjects\PhotoGalleryAoo\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\Pawcik\IdeaProjects\PhotoGalleryAoo\src\main\java\photoGallery\model" />
+      <recent name="C:\Users\Pawcik\IdeaProjects\PhotoGalleryAoo\src\main\java\photoGallery" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,8 +92,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.PhotoApp (1)">
-    <configuration name="PhotoApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="PhotoGalleryApp" />
+    <configuration name="PhotoApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="photoGallery" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="photoGallery.*" />
@@ -85,7 +106,7 @@
       </method>
     </configuration>
     <configuration name="PhotoApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="photoGallery" />
+      <module name="PhotoGalleryApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="photoGallery.*" />
@@ -135,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989739796" duration="331000" />
+      <workItem from="1577989739796" duration="11972000" />
     </task>
     <servers />
   </component>
