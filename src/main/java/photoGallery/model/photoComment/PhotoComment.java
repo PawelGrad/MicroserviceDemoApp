@@ -25,10 +25,15 @@ public class PhotoComment {
     public PhotoComment() {
     }
 
-    public PhotoComment(String commentText, String commentAuthor) {
+    public PhotoComment(String commentText, String commentAuthor, PhotoFile photo) {
         this.commentText = commentText;
         this.commentAuthor = commentAuthor;
         this.photo = photo;
+    }
+
+    public PhotoComment(String commentText, String commentAuthor) {
+        this.commentText = commentText;
+        this.commentAuthor = commentAuthor;
     }
 
     public Long getId() {
@@ -62,4 +67,6 @@ public class PhotoComment {
     public void setPhoto(PhotoFile photo) {
         this.photo = photo;
     }
+
+
 }

@@ -1,19 +1,16 @@
 package photoGallery.controllers;
 
-import com.sun.javafx.scene.control.skin.VirtualFlow;
-import org.apache.tomcat.util.codec.binary.Base64;
+import feign.FeignException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import photoGallery.exceptions.PhotoNotFoundException;
 import photoGallery.microservices.FeignClientComment;
-import photoGallery.microservices.FeignClientPhoto;
 import photoGallery.model.PhotoFile.PhotoFile;
 import photoGallery.model.PhotoFile.PhotoFileDTO;
 import photoGallery.model.PhotoFile.PhotoService;
 import photoGallery.model.photoComment.PhotoComment;
-
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,30 +32,48 @@ public class HomeController {
 
     @PostMapping("/uploadFile")
     public String uploadPhoto(@RequestParam("file") MultipartFile file) {
+        try {
         photoService.uploadPhoto(file);
         return "redirect:/uploadFile";
+        } catch (NullPointerException e) {
+            throw new PhotoNotFoundException("Photo doesn't exist");
+        }
     }
 
     @GetMapping("/photo/delete/{id}")
     public String deletePhoto(@PathVariable String id) {
-        photoService.deletePhoto(id);
-        return "redirect:/";
+        try {
+            photoService.deletePhoto(id);
+            return "redirect:/all";
+        } catch (FeignException e) {
+            throw new PhotoNotFoundException("Photo doesn't exist");
+        }
     }
 
     @GetMapping("/photo/show/{id}")
     public String showFile(@PathVariable String id, Model model) {
+        try {
         PhotoFile photo = photoService.getPhoto(id);
         model.addAttribute("photo", photoService.convertToDTO(photo));
+        model.addAttribute("comments", feignClientComment.getPhotoComments(id));
         return "showPhoto";
+        } catch (NullPointerException e) {
+            throw new PhotoNotFoundException("Photo doesn't exist");
+
+        }
     }
 
     @PostMapping("/photo/show/{id}")
     public String ratePhoto(@PathVariable("id") String id, @RequestParam("rating") Long rating){
+        try {
         PhotoFile photo = photoService.getPhoto(id);
         photoService.changeRating(rating, photo);
         return "redirect:/photo/show/" + id;
-    }
+        } catch (NullPointerException e) {
+            throw new PhotoNotFoundException("Photo doesn't exist");
 
+        }
+    }
 
     @GetMapping("/all")
     public String getAll(Model model){

@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/allPhotos.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showPhoto.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/444aed36-5881-4e6a-8039-976ab7310273.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/444aed36-5881-4e6a-8039-976ab7310273.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/exceptions/PhotoNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/FeignClientComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/FeignClientPhoto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addPhoto.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/CommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showPhoto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showPhoto.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" afterDir="false" />
@@ -75,8 +66,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -178,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989739796" duration="33722000" />
+      <workItem from="1577989739796" duration="37405000" />
     </task>
     <servers />
   </component>

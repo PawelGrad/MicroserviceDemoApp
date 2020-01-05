@@ -103,7 +103,7 @@ width: 400px;
                 <label for="Choice2">2</label>
 
                 <input type="radio" id="Choice3"
-                       name="rating" value="3">
+                       name="rating" value="3" checked="checked">
                 <label for="Choice3">3</label>
 
                 <input type="radio" id="Choice4"
@@ -125,7 +125,7 @@ width: 400px;
 <div class="split right">
     <div class="centered">
         <div class="commentsDiv">
-        <c:forEach items="${photo.comments}" var="comment">
+        <c:forEach items="${comments}" var="comment">
             <div class="commentContainer">
                 <div> Author: ${comment.commentAuthor}</div>
                 <div>${comment.commentText}</div>

@@ -27,7 +27,7 @@ public class PhotoFile {
     private byte[] data;
 
     @JsonManagedReference
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "photo", orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "photo", orphanRemoval = true)
     private List<PhotoComment> comments = new ArrayList<>();
 
     public PhotoFile() {
@@ -88,4 +88,6 @@ public class PhotoFile {
     public void setComments(List<PhotoComment> comments) {
         this.comments = comments;
     }
+
+
 }
