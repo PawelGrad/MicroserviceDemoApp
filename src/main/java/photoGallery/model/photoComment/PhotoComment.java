@@ -1,5 +1,6 @@
 package photoGallery.model.photoComment;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import photoGallery.model.PhotoFile.PhotoFile;
 
 import javax.persistence.*;
@@ -16,11 +17,18 @@ public class PhotoComment {
 
     private String commentAuthor;
 
-    @ManyToOne
-    @JoinColumn(name="photo_id") //nullable=false
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="photo_id", nullable=false)
     private PhotoFile photo;
 
     public PhotoComment() {
+    }
+
+    public PhotoComment(String commentText, String commentAuthor) {
+        this.commentText = commentText;
+        this.commentAuthor = commentAuthor;
+        this.photo = photo;
     }
 
     public Long getId() {

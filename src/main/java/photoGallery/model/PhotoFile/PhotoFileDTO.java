@@ -1,18 +1,11 @@
 package photoGallery.model.PhotoFile;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import photoGallery.model.photoComment.PhotoComment;
 
-import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Table(name = "photos")
-public class PhotoFile {
+public class PhotoFileDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String fileName;
@@ -23,14 +16,11 @@ public class PhotoFile {
 
     private Long rating;
 
-    @Lob
-    private byte[] data;
+    private String data;
 
-    @JsonManagedReference
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "photo", orphanRemoval = true, fetch = FetchType.EAGER)
-    private List<PhotoComment> comments = new ArrayList<>();
+    private List<PhotoComment> comments;
 
-    public PhotoFile() {
+    public PhotoFileDTO() {
     }
 
     public Long getId() {
@@ -73,11 +63,11 @@ public class PhotoFile {
         this.rating = rating;
     }
 
-    public byte[] getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(byte[] data) {
+    public void setData(String data) {
         this.data = data;
     }
 

@@ -7,22 +7,25 @@ import photoGallery.model.PhotoFile.PhotoFile;
 import photoGallery.model.photoComment.PhotoComment;
 
 import javax.xml.ws.Response;
+import java.util.List;
 
 @FeignClient(name = "photoComment-service")
-public interface CommentService {
+public interface FeignClientComment {
 
 
         @GetMapping("/comment/{id}")
         PhotoComment getComment(@PathVariable("id") String id);
 
         @PostMapping(value="/uploadComment", consumes = "application/json")
-        Response postComment(@RequestPart("file") PhotoComment file);
+        void postComment(@RequestPart("file") PhotoComment file);
 
         @DeleteMapping("/comment/delete/{id}")
-        Response deleteComment(@PathVariable String id);
+        void deleteComment(@PathVariable String id);
 
         @PutMapping(value = "/comment/update", consumes =  "application/json")
-        Response updateComment(@RequestPart("file") PhotoComment file);
+        void updateComment(@RequestPart("file") PhotoComment file);
 
+        @GetMapping("/comment/all/{id}")
+        List<PhotoComment> getPhotoComments(@PathVariable("id") String id);
 
 }
