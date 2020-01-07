@@ -1,6 +1,6 @@
 package photoGallery.model.PhotoFile;
 
-import photoGallery.model.photoComment.PhotoComment;
+import photoGallery.model.photoComment.PhotoCommentDTO;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class PhotoFileDTO {
 
     private String data;
 
-    private List<PhotoComment> comments;
+    private List<PhotoCommentDTO> comments;
 
     public PhotoFileDTO() {
     }
@@ -71,11 +71,11 @@ public class PhotoFileDTO {
         this.data = data;
     }
 
-    public List<PhotoComment> getComments() {
+    public List<PhotoCommentDTO> getComments() {
         return comments;
     }
 
-    public void setComments(List<PhotoComment> comments) {
+    public void setComments(List<PhotoCommentDTO> comments) {
         this.comments = comments;
     }
 }

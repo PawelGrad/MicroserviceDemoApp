@@ -1,37 +1,28 @@
 package photoGallery.model.photoComment;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import photoGallery.model.PhotoFile.PhotoFile;
+import photoGallery.model.PhotoFile.PhotoFileDTO;
 
-import javax.persistence.*;
 
-@Entity
-@Table(name = "comments")
-public class PhotoComment {
+public class PhotoCommentDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String commentText;
 
     private String commentAuthor;
 
-    @JsonBackReference
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="photo_id", nullable=false)
-    private PhotoFile photo;
+    private PhotoFileDTO photo;
 
-    public PhotoComment() {
+    public PhotoCommentDTO() {
     }
 
-    public PhotoComment(String commentText, String commentAuthor, PhotoFile photo) {
+    public PhotoCommentDTO(String commentText, String commentAuthor, PhotoFileDTO photo) {
         this.commentText = commentText;
         this.commentAuthor = commentAuthor;
         this.photo = photo;
     }
 
-    public PhotoComment(String commentText, String commentAuthor) {
+    public PhotoCommentDTO(String commentText, String commentAuthor) {
         this.commentText = commentText;
         this.commentAuthor = commentAuthor;
     }
@@ -60,13 +51,21 @@ public class PhotoComment {
         this.commentAuthor = commentAuthor;
     }
 
-    public PhotoFile getPhoto() {
+    public PhotoFileDTO getPhoto() {
         return photo;
     }
 
-    public void setPhoto(PhotoFile photo) {
+    public void setPhoto(PhotoFileDTO photo) {
         this.photo = photo;
     }
 
-
+    @Override
+    public String toString() {
+        return "PhotoComment{" +
+                "id=" + id +
+                ", commentText='" + commentText + '\'' +
+                ", commentAuthor='" + commentAuthor + '\'' +
+                ", photo=" + photo +
+                '}';
+    }
 }

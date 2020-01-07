@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/exceptions/PhotoNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showPhoto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showPhoto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/FeignClientComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/FeignClientCommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/FeignClientPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/FeignClientPhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/microservices/FeignClientComment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/microservices/FeignClientPhoto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFileDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989739796" duration="37405000" />
+      <workItem from="1577989739796" duration="46047000" />
     </task>
     <servers />
   </component>
