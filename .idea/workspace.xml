@@ -60,6 +60,7 @@
         <option value="Interface" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -76,6 +77,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -84,9 +87,15 @@
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="photoGallery.controllers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Pawcik\IdeaProjects\PhotoGalleryAoo\src\main\resources" />
       <recent name="C:\Users\Pawcik\IdeaProjects\PhotoGalleryAoo\src\main\webapp\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pawcik\IdeaProjects\PhotoGalleryAoo\src\main\webapp\WEB-INF\views" />
@@ -161,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989739796" duration="47640000" />
+      <workItem from="1577989739796" duration="48688000" />
     </task>
     <servers />
   </component>
