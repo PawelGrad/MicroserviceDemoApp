@@ -76,6 +76,7 @@ width: 400px;
 <body>
 
 <div class="split left">
+    <a href="/"><button>All photos</button></a>
     <div class="centered">
         <div class="photoDiv">
         <img class="photo" src="data:image/jpeg;base64,${photo.data}" /> <br>

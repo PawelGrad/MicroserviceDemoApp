@@ -38,7 +38,7 @@
 </style>
 
 <body>
-
+<a href="/uploadFile"><button>Upload photo</button></a>
 <c:forEach var="photo" varStatus="status" items="${photos}" step="1" begin="0">
     <div id="col${status.index % 3 + 1}">
        <a href="/photo/show/${photo.id}"><img src="data:image/jpeg;base64,${photo.data}"/></a>

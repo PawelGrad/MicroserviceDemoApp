@@ -22,6 +22,12 @@ public class HomeController {
         this.feignClientPhotoService = feignClientPhotoService;
     }
 
+    @GetMapping("/")
+    public String index(Model model){
+        model.addAttribute("photos", feignClientPhotoService.getAll());
+        return "allPhotos";
+    }
+
     @GetMapping("/uploadFile")
     public String test(){
         return "addPhoto";
@@ -31,7 +37,7 @@ public class HomeController {
     public String uploadPhoto(@RequestParam("file") MultipartFile file) {
         try {
         feignClientPhotoService.postPhoto(file);
-        return "redirect:/uploadFile";
+        return "redirect:/";
         } catch (NullPointerException e) {
             throw new PhotoNotFoundException("Photo doesn't exist");
         }
