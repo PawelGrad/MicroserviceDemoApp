@@ -14,8 +14,6 @@
     <button type="submit">Submit</button>
 </form>
 <hr/>
-<div th:if="${message}">
-    <h2 th:text="${message}"/>
-</div>
+${message}
 </body>
 </html>
